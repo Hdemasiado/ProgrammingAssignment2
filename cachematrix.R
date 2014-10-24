@@ -1,14 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Hdemasiado comments
 ## we have two functions
 ## 1-makeCacheMatrix->build up a matrix and calculate the inverse, storing it in cache
 ## 2-cacheSolve->calculation of the inverse matrix in case there is no cache of it
+
 ## makeCacheMatrix is a function creating a special matrix, which is a list containing a function to 
 ## 1-set the value of the matrix
 ## 2 get the value of the matrix
 ## 3-set the value of the inverse of the matrix
 ## 4-get the value of the inverse
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -22,8 +21,6 @@ makeCacheMatrix <- function(x = matrix()) {
     list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
-
-## Write a short comment describing this function
 ## cacheSolve calculates, if there is no value cached, the inverse of the matrix
 
 cacheSolve <- function(x, ...) {
@@ -37,5 +34,4 @@ cacheSolve <- function(x, ...) {
     x$setinverse(inv)
     inv
     ## Return a matrix that is the inverse of 'x'
-        ## Return a matrix that is the inverse of 'x'
 }
